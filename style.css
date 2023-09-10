@@ -1,30 +1,51 @@
 *{
   margin: 0;
+  color: #f5fffa;
 }
-#logo{
-  width: 100%;
-  height: 100%;
-  filter: blur(5px );
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
+body{
+  background-image: url(/img/logo.jpg);
 }
-header{
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+
+nav{
+  width: 100%vw;
+  backdrop-filter: blur(16px) saturate(180%);
+	background: rgba(255, 255, 255, 0.262);
 }
-header nav ul li{
+nav ul{
   display: flex;
   justify-content: space-around;
+
+}
+nav ul li{
+  list-style: none;
   padding: 1rem 0;
 }
-header nav ul li a{
+nav ul li a{
   color: #f5fffa;
+  align-items : space-between;
   text-decoration: none;
 }
-header nav ul li a:hover{
+nav ul li a:hover{
   color: #f5fffab2;
   transition: 1s;
+}
+
+/* translate*/
+
+.language{
+  display: block;
+  z-index: 1;
+}
+.selected-language{
+  display: block;
+  
+}
+
+#about, #contact, #experience, #habilities{
+  background-color: rgba(133, 133, 133, 0.89);
+  height: 20rem;
+  margin: 10rem auto;
+  position: relative;
+  width: 80%;
+  
 }
