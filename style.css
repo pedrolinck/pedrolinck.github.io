@@ -1,51 +1,59 @@
 *{
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  color: #f5fffa;
+  
 }
 body{
   background-image: url(/img/logo.jpg);
+  background-attachment: fixed;
 }
-
+header{
+  position: sticky;
+  top: 0;
+}
 nav{
-  width: 100%vw;
   backdrop-filter: blur(16px) saturate(180%);
 	background: rgba(255, 255, 255, 0.262);
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 nav ul{
   display: flex;
   justify-content: space-around;
-
 }
 nav ul li{
   list-style: none;
   padding: 1rem 0;
 }
 nav ul li a{
-  color: #f5fffa;
   align-items : space-between;
+  color: #e3e3e3;
+  letter-spacing: 1px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 nav ul li a:hover{
-  color: #f5fffab2;
+  color: #fbfbfb;
   transition: 1s;
 }
 
-/* translate*/
-
-.language{
-  display: block;
-  z-index: 1;
-}
-.selected-language{
-  display: block;
-  
-}
-
 #about, #contact, #experience, #habilities{
-  background-color: rgba(133, 133, 133, 0.89);
+  background-color: rgba(199, 199, 199, 0.908);
   height: 20rem;
   margin: 10rem auto;
-  position: relative;
-  width: 80%;
-  
+  width: 50rem;
+}
+section div{
+  border-radius: 0.5rem;
+}
+section a{
+  text-decoration: none;
+  color: #000000;
+}
+section h2, p{
+  padding: 1rem;
+}
+section ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
